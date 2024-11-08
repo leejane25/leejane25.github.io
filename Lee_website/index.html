@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8" />
+    <title>Jane Lee</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav {
+            width: 100vw;
+            height: 53vh;
+            background-color: #F1D5DB;
+            list-style-type: none; 
+            padding: 10px;
+        }
+        
+        #wrap {
+            margin: 20px;
+            background-color: #F6F5F1;
+            padding: 10px;
+        }
+        
+        .panel {
+            height: 100vh;
+            padding-top: 3vh;
+        }
+        
+        #panel1{
+            background-color: #F6F5F1;
+            margin: 20px;
+            height: 500px;
+        }
+        #panel2 {
+            background-color: #F6F5F1;
+            margin: 20px;
+            height: 1000px;
+        }
+        #panel3{
+            background-color: #F6F5F1;
+            margin: 20px;
+            height: 400px;
+        }
+        
+        h1{
+            font-family: "Montserrat";
+            width: 300;
+            border-left: 20px solid #C15B75;
+            padding: 10px;
+            margin: 10px;
+        
+        }
+        h2, h3 {
+            font-family: "Montserrat";
+            width: 500px;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        p{
+            font-family: "Montserrat";
+            font-size: 20px;
+        }
+        
+        li{
+            font-family: "Montserrat";
+            font-size: 18px;
+        }
+        
+        a {
+            font-size: 20px;
+            color: #141C80;
+            font-family: "Montserrat";
+        }
+        
+        img {
+            border-radius: 20px;
+        }
+        
+        img.one {
+            float: right;
+            margin-left: 10px;
+            border: 5px solid #141C80;
+            padding: 3px;
+            box-shadow: 5px 5px 5px 0 #141C80;
+        } 
+        
+        table, th {
+            font-size: 16px;
+            width: 190px;
+            text-align: center;
+            font-family: "Montserrat";
+            table-layout: fixed;
+            margin: 40px;
+        }
+        
+        tr, td {
+            text-align: left;
+            font-family: "Aleo";
+            padding: 10px;
+        }
+        
+        td.one {
+            text-align: center;
+        }
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // Apply click event only to internal links
+            $("a[href^='#']").click(function (event) {
+                event.preventDefault();
+                
+                var targetID = $(this).attr('href');
+
+                $('html,body').animate({
+                    scrollTop: $(targetID).offset().top
+                }, 1000, 'swing');
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <nav>
+        <center>
+            <img src="images/logo.png" width="255" height="255" alt="pop shop logo"/>
+            
+            <li><a href="#panel1">Hey There!</a></li>
+            <li><a href="#panel2">Experience</a></li>
+            <li><a href="#panel3">Contact Info</a></li>
+        </center>
+    </nav>
+    <div id="wrap">
+        <div id="panel1" class="panel">
+            <h1>Hey There!</h1>
+            <p>Welcome! I’m Jane Lee, a freshman at the University of Maryland, College Park, majoring in Information Science. As a member of the College Park Scholars Science, Technology, and Society (STS) program, I’m passionate about understanding how technology influences society and drives positive change. Originally from Rockville, MD, I’m thrilled to dive into the world of data, design, and development to create impactful digital experiences.</p>
+            <br>
+            <p>My journey in tech has already led me to exciting opportunities. From my work as a Front-End Developer Intern with Lattice Group, where I developed a responsive e-commerce feature, to my time as a PSIA Level 1 Ski Instructor, where I fostered teamwork and safety on the slopes, I’m committed to learning, collaborating, and making a difference.</p>
+            <br>
+            <p>I’m enthusiastic about combining technical skills in programming and database management with a creative mindset to tackle real-world challenges. Let’s connect and explore how technology can empower individuals and communities alike!</p>
+        </div>
+        <div id="panel2" class="panel">
+    <h1>Experience</h1>
+    
+    <div class="job">
+        <h2>Front-End Developer Intern</h2>
+        <p><em>Lattice Group, Inc., Gaithersburg, MD</em> | July – August 2024</p>
+        <ul>
+            <li>Developed and implemented a new online shopping feature for Ski Center LTD, improving customer accessibility and expanding e-commerce services.</li>
+            <li>Built a responsive website using Dart and Flutter, enhancing user experience across devices.</li>
+            <li>Collaborated closely with peers and mentors, gaining insights into operating systems, web applications, and database management.</li>
+        </ul>
+    </div>
+    
+    <div class="job">
+        <h2>Back-End Developer Intern</h2>
+        <p><em>Lattice Group, Inc., Gaithersburg, MD</em> | June – August 2023</p>
+        <ul>
+            <li>Designed a preliminary database structure for Ski Center LTD’s product catalog, improving organization and data retrieval.</li>
+            <li>Utilized phpMyAdmin, MySQL, SQL, and Excel to prototype and document the database setup, providing a foundation for future improvements.</li>
+            <li>Presented a report on database management strategies, offering insights into efficient data storage and retrieval solutions.</li>
+        </ul>
+    </div>
+    
+    <div class="job">
+        <h2>PSIA Level 1 Ski Instructor</h2>
+        <p><em>Vail Resorts - Whitetail Mountain Resort, Mercersburg, PA</em> | December 2023 – February 2024</p>
+        <ul>
+            <li>Instructed youth skiers with a focus on safety, technique, and fostering a positive learning environment.</li>
+            <li>Maintained current knowledge of safety procedures to ensure a secure experience for all participants.</li>
+            <li>Received “On-The-Spot” awards for exemplifying the values of service and integrity.</li>
+        </ul>
+    </div>
+    
+    <div class="job">
+        <h2>Apprentice</h2>
+        <p><em>KID Museum, Bethesda, MD</em> | Summer 2022</p>
+        <ul>
+            <li>Selected for the apprentice program, receiving training in Maker Education and STEM-based learning techniques.</li>
+            <li>Instructed over 100 campers (ages 4-14) in STEM activities, fostering hands-on engagement and curiosity.</li>
+            <li>Collaborated with volunteers to maintain a safe, innovative environment, nurturing children’s enthusiasm for STEM.</li>
+        </ul>
+    </div>
+</div>
+        <div id="panel3" class="panel">
+           <h1>Contact Info</h1>
+            <p>Email: <a href="mailto:your.email@example.com">jjanelee8@gmail.com</a></p>
+            <p>Phone: <a href="tel:+240-535-3888">+240-535-3888</a></p>
+            <p><a href="https://www.linkedin.com/in/jane-lee-946199313/" target="_blank">Linkedin</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
